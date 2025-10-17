@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Placing Order</title>
+    <link rel="stylesheet" href="style.css" >
+  </head>
+
+  <body>
+    <div id="green_border">
+      <header>
+        <h1>
+          <u> <a>Placing Order </a> </u>
+        </h1>
+      </header>
+
+      <div class="placing_order_container">
+        <form action="processing/placingOrder.php" method="post">
+          <label for="serialNumber"> <u> Item Serial #</u>&nbsp;&nbsp;</label>
+          <input
+            type="text"
+            id="serialNumber"
+            name="serialNumber"
+            placeholder="umd-item-0000" ><br><br>
+
+          <label for="cc1"><u> Credit Card # </u>&nbsp;&nbsp;</label>
+          <input type="text" id="cc1" name="cc1" maxlength="4" required >
+
+          <span> &nbsp; - &nbsp; </span>
+
+          <input type="text" id="cc2" name="cc2" maxlength="4" required >
+
+          <span> &nbsp; - &nbsp; </span>
+
+          <input type="text" id="cc3" name="cc3" maxlength="4" required >
+          <span> &nbsp; - &nbsp;</span>
+
+          <input
+            type="text"
+            id="cc4"
+            name="cc4"
+            maxlength="4"
+            required><br><br>
+
+          <label for ="shipping"> <u>Shipping Address </u>&nbsp;</label>
+          <input type="text" id="shipping" name="shipping" > <br><br>
+
+          <label for = "email"> <u> Contact Email Address:</u>&nbsp;&nbsp;</label>
+          <input
+            type="text"
+            name="email" id="email"
+            placeholder="example@terpmail.umd.edu">
+          <br><br>
+
+          <input type="submit" value="Submit Order" >
+          <input type="reset" value="     Clear       " >
+        </form>
+      </div>
+      <div class="footer_blue_bord">
+        <footer class="footer">
+          <!--#include virtual="footer.shtml" -->
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

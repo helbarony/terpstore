@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Terp Store</title>
+    <link rel="stylesheet" href="style.css" >
+  </head>
+
+  <body>
+    <div id="green_border">
+      <header>
+        <h1>
+          <u><a> Terp Store</a> </u>
+        </h1>
+      </header>
+
+      <div class="content">
+        <div class="box_container">
+         <div id ="color">
+          <a href="catalogInquiry.shtml"> <u>Catalog Inquiry </u></a>
+          <a href="placingOrder.shtml"> <u> placing order</u> </a></div>
+        </div>
+
+        <div class="footer_blue_bord">
+          <footer class = "footer">
+            <!--#include virtual="footer.shtml" -->
+          </footer>
+         </div>
+      </div>
+    </div>
+  </body>
+</html>

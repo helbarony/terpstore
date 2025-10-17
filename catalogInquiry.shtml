@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Catalog Inquiry</title>
+    <link rel="stylesheet" href="style.css" >
+  </head>
+
+  <body>
+    <div id="green_border">
+      <header>
+        <h1>
+          <u> <a> Catalog Inquiry</a> </u>
+        </h1>
+      </header>
+      <div class="form_container">
+        <div class="content">
+          <form
+            action="http://npp.cs.umd.edu/cmsc335/projects/TerpStore/catalogInquiry.php"
+            method="get">
+            <label for="item-choice"> <u> Item Category </u>&nbsp;&nbsp;</label>
+            <input list="item-options" id="item-choice" name="item-choice" >
+            <datalist id="item-options">
+              <option value="Clothes">
+              <option value="Books">
+              <option value="Music">
+              <option value="Food">
+              <option value="Other">
+            </datalist><br><br>
+
+            <label for="maximumCost">
+              <u> Maximum Cost($) </u>&nbsp;&nbsp;
+            </label>
+            <input
+              type="number"
+              id="maximumCost"
+              name="maximumCost"
+              min="1"
+              max="1000"
+              step="5"
+              value="1"
+              required>
+            <p>
+              <input type="checkbox" name="availableOnCampus" >
+              <u>Available on Campus</u>&nbsp;&nbsp;<br><br>
+              <input type="checkbox" name="availableOnline" checked >
+              <u>Available Online</u> &nbsp;&nbsp;
+            </p>
+
+            <label for="info"><u> Addtional Information </u> </label>
+            <textarea rows="8" cols="67" id = "info" name="info" > </textarea><br><br>
+
+            <label for="email">
+              <u><strong> Contact Email Address:</strong></u>&nbsp;&nbsp;</label>
+
+            <input
+              type="text" id="email" name="email" placeholder="example@terpmail.umd.edu"> <br><br>
+
+            <p>
+              <input type="submit" value="Submit Inquiry" >
+              <input type="reset" value="    Clear     " >
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer_blue_bord">
+        <footer class="footer">
+          <!--#include virtual="footer.shtml" -->
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
